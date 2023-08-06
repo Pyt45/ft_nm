@@ -3,7 +3,11 @@
 
 #include <stdio.h>
 #include <sys/file.h>
+# ifdef __aarch64__
+#include "elf.h"
+#else
 #include <elf.h>
+#endif
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/types.h>

@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
         handle_elf(tmp);
         tmp = tmp->next;
     }
-    printf("freeing\n");
+
     if (file)
         free_files(&file);
 }
