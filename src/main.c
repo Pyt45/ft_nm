@@ -22,11 +22,10 @@ int main(int argc, char **argv) {
     }
     t_file* tmp = file;
     while (tmp) {
-        handle_elf64(tmp);
+        handle_elf(tmp);
         tmp = tmp->next;
     }
-    if (file) {
-        printf("freeing ...\n");
+    printf("freeing\n");
+    if (file)
         free_files(&file);
-    }
 }

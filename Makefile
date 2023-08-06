@@ -1,11 +1,11 @@
 NAME := ft_nm
 
 CC := gcc
-FLAGS := -Wall -Wextra -Werror
+FLAGS := 
 OBJDIR := obj/
 SRCDIR := src/
 
-SRC := main.c utils.c elf32.c elf64.c memory_mapping.c
+SRC := main.c utils.c elf32.c elf64.c memory_mapping.c recognize_elftype.c
 OBJ := $(addprefix $(OBJDIR), $(SRC:.c=.o))
 INCLUDE := include
 
